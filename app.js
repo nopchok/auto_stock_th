@@ -96,7 +96,7 @@ const gracefulShutdown = () => {
 let waitForAnySelector = (page, selectors) => new Promise((resolve, reject) => {
 	let hasFound = false
 	selectors.forEach(selector => {
-		page.waitFor(selector,{timeout:60000})
+		page.waitForTimeout(selector,{timeout:60000})
 		.then(() => {
 			if (!hasFound) {
 				hasFound = true
@@ -229,7 +229,7 @@ const check_4column = async function(){
         try{
             await page.waitForSelector('[id="my_4col"]', {timeout: 100});
             await page.click('[id="my_sel_4col"]');
-            await page.waitFor(1000);
+            await page.waitForTimeout(1000);
             await page.click('[id="my_4col"]');
         }catch(e){}
     }
