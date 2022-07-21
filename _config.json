@@ -1,0 +1,13 @@
+{
+    "settrade_url": "https://"
+    ,"telegram_chat_id": 123456789
+    ,"telegram_api": "123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
+
+    ,"username" : "000000"
+    ,"password" : "PASSWORD"
+    ,"pin": "0000"
+    ,"cash": 100000
+
+    ,"show_browser": true
+    ,"port" : 8088
+}
